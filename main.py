@@ -90,7 +90,7 @@ input[type="text"] {
 
 add_website_header(
     """
-    <audio controls loop id="music_1">
+    <audio controls autoplay loop muted>
         <source src="once_upon_a_time.mp3" type="audio/mpeg">
     </audio>
     """)
@@ -100,8 +100,7 @@ def index(state: State) -> Page:
     """ The audio page. """
     return Page(state,[
         "Just Audio.",
-        """<button onclick="document.getElementById('music_1').volume = 1.0">Unmute</button>""",
-        """<button onclick="document.getElementById('music_1').volume = 0.0">Mute</button>""",
+        """<button onclick="toggleMute()">Mute | Unmute</button>""",
         ])
 
 #############################################################################    
