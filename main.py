@@ -22,6 +22,7 @@ set_site_information(
     sources=["List any help resources or sources you used"],
     planning=["your_planning_document.pdf"],
     links=["https://github.com/your-username/your-repo"]
+)
 hide_debug_information()
 set_website_title("Housewitching")
 set_website_framed(False)
