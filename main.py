@@ -35,7 +35,7 @@ add_website_css("""
 body {
     background-color: #222222;
     color: White;
-    font-size: 40px;
+    font-size: 15px;
     font-family: "Papyrus", sans-serif;
     width: 960px;
     margin: 0 auto;
@@ -90,7 +90,7 @@ input[type="text"] {
 
 add_website_header(
     """
-    <audio controls autoplay loop muted>
+    <audio autoplay loop>
         <source src="once_upon_a_time.mp3" type="audio/mpeg">
     </audio>
     """)
@@ -99,8 +99,7 @@ add_website_header(
 def index(state: State) -> Page:
     """ The audio page. """
     return Page(state,[
-        "Just Audio.",
-        """<button onclick="toggleMute()">Mute | Unmute</button>""",
+        "Please Allow sound in the site settings to hear the music!",
         ])
 
 #############################################################################    
